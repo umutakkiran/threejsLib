@@ -8,7 +8,7 @@ import { useSpring, animated } from '@react-spring/three'
  export function William({onPress}) {
     const [active ,setActive] = useState(false)
     const mesh = useRef(null)
-    const model = useGLTF("http://threejstutorial-273c3c9262ac.herokuapp.com/william.glb")
+    const model = useGLTF("https://threejstutorial-273c3c9262ac.herokuapp.com/william.glb")
 
     const { scale } = useSpring({ scale: active ? 0.015 : 0.01 })
     const {position} = useSpring({position: active ? [2,1.85,1.5] : [1.8,3.35,-0.1] })
