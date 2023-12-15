@@ -8,7 +8,7 @@ import { useSpring, animated } from '@react-spring/three'
  export function Akira({onPress}) {
     const [active ,setActive] = useState(false)
     const mesh = useRef(null)
-    const model = useGLTF("http://threejstutorial-273c3c9262ac.herokuapp.com/akira.glb")
+    const model = useGLTF("https://threejstutorial-273c3c9262ac.herokuapp.com/akira.glb")
 
     const { scale } = useSpring({ scale: active ? 0.015 : 0.009 })
     const {position} = useSpring({position: active ? [2,1.85,1.5] : [1.97,3.35,-0.1] })
