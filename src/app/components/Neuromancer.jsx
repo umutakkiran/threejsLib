@@ -8,7 +8,7 @@ import { useSpring, animated } from '@react-spring/three'
  export function Neuromancer({onPress}) {
     const [active ,setActive] = useState(false)
     const mesh = useRef(null)
-    const model = useGLTF("http://localhost:3000/neuromancer.glb")
+    const model = useGLTF("http://threejstutorial-273c3c9262ac.herokuapp.com/neuromancer.glb")
 
     const { scale } = useSpring({ scale: active ? 0.015 : 0.009 })
     const {position} = useSpring({position: active ? [2,1.85,1.5] : [2.25,3.32,-0.1] })
