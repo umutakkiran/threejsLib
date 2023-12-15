@@ -8,7 +8,7 @@ import { useSpring, animated } from '@react-spring/three'
  export function MainMesh() {
     const [active ,setActive] = useState(false)
     const mesh = useRef(null)
-    const model = useGLTF("http://threejstutorial-273c3c9262ac.herokuapp.com/room/scene.gltf")
+    const model = useGLTF("https://threejstutorial-273c3c9262ac.herokuapp.com/room/scene.gltf")
 
     
 
