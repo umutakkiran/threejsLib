@@ -8,7 +8,7 @@ import { useSpring, animated } from '@react-spring/three'
  export function Cup({onPress}) {
     const [active ,setActive] = useState(false)
     const mesh = useRef(null)
-    const model = useGLTF("http://threejstutorial-273c3c9262ac.herokuapp.com/cup.glb")
+    const model = useGLTF("https://threejstutorial-273c3c9262ac.herokuapp.com/cup.glb")
 
     const { scale } = useSpring({ scale: active ? 0.01 : 0.005 })
     const {position} = useSpring({position: active ? [2,1.85,1.5] : [2,1.35,1.2] })
